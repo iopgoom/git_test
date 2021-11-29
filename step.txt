@@ -1,0 +1,73 @@
+-- 기본세팅 시작
+
+vs 코드는 관리자권한으로 실행하기
+파이썬 확장 프로그램 다운로드
+
+파이썬 설치
+node.js 설치
+pipenv 설치
+
+pipenv --three 입력
+pipenv shell 입력
+pipenv install Django==2.2.5 입력
+django-admin startproject config 입력
+
+//config 폴더 생성되면 이름 변경후 내부의 파일 밖으로 빼주기//
+
+f1 - python: select interpriter 에서 pipenv 붙은거 선택 (안나올경우 pipenv --three 안한거)
+f1 - python:select linter : flake8
+
+-- 린터 설치 (flake8 )
+
+파이썬 파일 클릭하면 flake8 설치안됬다고 나옴 설치하기
+or pipenv install flake8 --dev (터미널에 입력)
+
+
+-- 포메터 설치 (black)
+
+pipenv install black --dev --pre 입력
+
+vscode 폴더에서 secttings.json 아래에 아래 두문장 넣기 
+마지막에 , 꼭 확인
+
+"editor.defaultFormatter": null ,
+"python.formatting.provider": "black"
+
+
+설정에서 format on save 체크 확인 후 저장해보기
+
+
+-- 기본세팅 끝
+
+-- 장고 기본언어 시작
+
+pipenv.shell 켜고 (중요)
+python manage.py runserver 입력
+중간쯤에 나오는 http~~~ 컨트롤 클릭
+runserver 해재는 컨트롤 c
+runserver 가 안되어있으면 주소 안들어가짐.
+
+새로운 기능 만들기
+
+django-admin startapp 어플리케이션이름 
+
+기능 지우기
+
+rm -rf 어플리케이션이름 
+
+관리자 아이디 생성
+
+python manage.py createsuperuser
+아이디
+e메일
+비밀번호
+확인
+
+-- 장고 기본언어 끝
+-- 장고 기능 추가 users
+
+
+
+-- 장고 기능 추가 users
+
+
